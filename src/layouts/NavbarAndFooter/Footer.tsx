@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 export const Footer = () => {
     return(
@@ -7,14 +7,14 @@ export const Footer = () => {
                 <p className="col-md-4 mb-0 text-white">© Example Library App, Inc</p>
                 <ul className="nav navbar-dark col-md-4 justify-content-end">
                     <li className="nav-item">
-                        <Link to="/home" className="nav-link px-2 text-white">
+                        <NavLink to="/home" className="nav-link px-2 text-white">
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className="nav-item">
-                        <Link to="/search" className="nav-link px-2 text-white">
+                        <NavLink to="/search" className="nav-link px-2 text-white">
                             Search Books
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </footer>

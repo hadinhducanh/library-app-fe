@@ -12,11 +12,11 @@ export const BookCheckoutPage = () => {
   const [httpError, setHttpError] = useState(null);
   const bookId = window.location.pathname.split("/")[2];
 
-  //Review State
   const [reviews, setReviews] = useState<ReviewModel[]>([]);
   const [totalStars, setTotalStars] = useState(0);
   const [isLoadingReview, setIsLoadingReview] = useState(true);
 
+//Book State
   useEffect(() => {
     const fetchBook = async () => {
       const baseUrl: string = `http://localhost:8080/api/books/${bookId}`;
@@ -51,7 +51,7 @@ export const BookCheckoutPage = () => {
 
 
   
-  //Books State
+  //Review State
 
   useEffect(()=> {
     const fetchBookReviews = async ()  => {
