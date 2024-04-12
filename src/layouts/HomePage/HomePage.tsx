@@ -1,16 +1,15 @@
 import { Carousel } from "./components/Carousel";
 import { ExploreTopBooks } from "./components/ExploreTopBooks";
 import { Heros } from "./components/Heros";
-import { LibraryServices } from "./components/LibrabryServices";
-
+import { LibraryServices } from "./components/LibraryServices";
 
 export const HomePage = () => {
-    return(
+    return (
         <>
-            <ExploreTopBooks />
-            <Carousel />
-            <Heros />
-            <LibraryServices />
+            <ExploreTopBooks/>
+            <Carousel/>
+            <Heros/>
+            <LibraryServices/>
         </>
     );
 }
